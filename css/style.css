@@ -3,10 +3,18 @@ html,
   font-family: "Raleway", sans-serif;
 }
 .story {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(255, 255, 255)),
+    to(rgb(186, 187, 186))
+  );
+  background: -o-linear-gradient(rgb(255, 255, 255), rgb(186, 187, 186));
   background: linear-gradient(rgb(255, 255, 255), rgb(186, 187, 186));
 }
 
-.icon {
+.profile-pic {
   /* display: inline-block;
   position: relative; */
   width: 200px;
@@ -15,11 +23,30 @@ html,
   border-radius: 50%;
 }
 
-.icon img {
-  width: 105%;
-  margin-top: 65%;
+.profile-pic img {
+  width: 100%;
+  margin-top: 50%;
   margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.icon img {
+  width: 40px;
+
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+  -webkit-transition: -webkit-filter 0.2s;
+  transition: -webkit-filter 0.2s;
+  -o-transition: filter 0.2s;
+  transition: filter 0.2s;
+  transition: filter 0.2s, -webkit-filter 0.2s;
+}
+
+.icon img:hover {
+  -webkit-filter: brightness(1.5);
+  filter: brightness(1.5);
 }
 
 .heading {
@@ -44,12 +71,15 @@ li {
 }
 
 .personal {
-  background: #093028; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #237a57,
-    #093028
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: #093028; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#237a57),
+    to(#093028)
+  );
+  background: -o-linear-gradient(left, #237a57, #093028);
   background: linear-gradient(
     to right,
     #237a57,
