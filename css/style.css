@@ -88,6 +88,15 @@ li {
   color: aliceblue;
 }
 
+.personal a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.personal a:hover {
+  color: rgb(137, 192, 250);
+}
+
 .personal .details {
   display: inline-block;
   text-align: left;
