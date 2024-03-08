@@ -4,11 +4,13 @@ html,
 }
 
 .story {
-  background: -webkit-gradient(linear,
-      left top,
-      left bottom,
-      from(rgb(255, 255, 255)),
-      to(rgb(186, 187, 186)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(255, 255, 255)),
+    to(rgb(186, 187, 186))
+  );
   background: -o-linear-gradient(rgb(255, 255, 255), rgb(186, 187, 186));
   background: linear-gradient(rgb(255, 255, 255), rgb(186, 187, 186));
 }
@@ -69,19 +71,23 @@ li {
   list-style-type: none;
 }
 
+.list-style-bullet {
+  list-style-type: disc;
+}
+
 .personal {
   background: #093028;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear,
-      left top,
-      right top,
-      from(#237a57),
-      to(#093028));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#237a57),
+    to(#093028)
+  );
   background: -o-linear-gradient(left, #237a57, #093028);
-  background: linear-gradient(to right,
-      #237a57,
-      #093028);
+  background: linear-gradient(to right, #237a57, #093028);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: aliceblue;
 }
